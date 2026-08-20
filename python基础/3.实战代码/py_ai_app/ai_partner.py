@@ -4,7 +4,7 @@ from openai import OpenAI
 from streamlit import text_input
 from datetime import datetime
 import json
-
+#收获:1.缓存的使用 2.历史文件的保存;
 
 # 1.与LLM交互逻辑:
 #     1>设置聊天输入框(chat_input)和聊天输出框(chat_output);

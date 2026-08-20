@@ -3,6 +3,7 @@ from lxml import html
 import csv
 import re
 
+#爬取->正则处理->保存为字典列表->写入csv文件;
 # 1.爬取电影数据主逻辑:
 #     1>向榜单页面爬取所有电影的url
 #     2>遍历所有电影url,获取每部电影信息,组成字典返回
@@ -20,13 +21,13 @@ TMDB_BASE_URL = "https://www.themoviedb.org"#基础url
 TMDB_TOP_URL="https://www.themoviedb.org/movie/top-rated" #榜单页面url
 MORE_MOVIE_URL="https://www.themoviedb.org/discover/movie/items"
 
-#获取url电影详细信息
+#返回清洗后的年份
 def get_movie_year(movie_years):
     #py中字符串有值时,返回True,否则返回False
     movie_years=movie_years[0].strip() if movie_years else ""
     return movie_years.replace("(", "").replace(")", "")
 
-#清洗电影年份
+#清洗电影时间
 def get_movie_date(movie_dates):
     movie_dates=movie_dates[0].strip() if movie_dates else "" #先提取,去空格
     return re.search(r"\d{4}-\d{2}-\d{2}",movie_dates).group() #返回匹配到的值;
@@ -47,7 +48,7 @@ def get_movie_detail(movie_all_url):
 
     # 2.解析,获取文本文档
     doc=html.fromstring(movie_response.text)
-    #.xpath返回的是 匹配值的列表(一般只有一个值)
+    #.xpath返回的是 匹配值的列表(即使只有一个值也会返回列表)
     movie_name=doc.xpath("//*[@id='original_header']/div[2]/section/div[1]/h2/a/text()") #电影名称
     movie_years = doc.xpath("//*[@id='original_header']/div[2]/section/div[1]/h2/span/text()") #电影上映年份
     movie_dates = doc.xpath("//*[@id='original_header']/div[2]/section/div[1]/div/span[2]/text()") #电影上映时间
@@ -64,7 +65,7 @@ def get_movie_detail(movie_all_url):
         "电影名":movie_name[0].strip() if movie_name else "",#strip去除收尾多余空格
         "上映年份":get_movie_year(movie_years),
         "上映时间":get_movie_date(movie_dates),
-        "标签":",".join(movie_tags) if movie_tags else "",
+        "标签":",".join(movie_tags) if movie_tags else "",#获取用,分隔的列表;
         "时长":get_movie_cost_time(movie_cost_times),
         "评分":movie_scores[0].strip() if movie_scores else "",
         "语言":movie_languages[0].strip() if movie_languages else "",
@@ -80,7 +81,7 @@ def save_all_movies(all_movies):
     with open(FILE_SAVE_PATH,"w",encoding="utf-8",newline="")as f:
         writers=csv.DictWriter(f,fieldnames=["电影名","上映年份","上映时间","标签","时长","评分","语言","导演","作者","标语","描述"])
         writers.writeheader()#写入表头
-        writers.writerows(all_movies)#写入数据
+        writers.writerows(all_movies)#写入数据:传入字典组成的列表;
 
 
 def main():
