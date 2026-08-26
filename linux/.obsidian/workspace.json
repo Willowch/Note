@@ -1,0 +1,236 @@
+{
+  "main": {
+    "id": "28610372468a347b",
+    "type": "split",
+    "children": [
+      {
+        "id": "14428da55719e119",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1ae7d81043cbfbd4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "linux基础/第17章 shell编程.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "第17章 shell编程"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "60bcf21c2ec80a1e",
+    "type": "split",
+    "children": [
+      {
+        "id": "720f05e23ff83ced",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2b935a5733a653a9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "31790f5f6f184b38",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "4a55198826a4d3da",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "265c39cd35b616cc",
+    "type": "split",
+    "children": [
+      {
+        "id": "0fe3fd8b58ad6799",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5394333fd01328bc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "linux基础/第1章 内容介绍.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "7197697369eed452",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "linux基础/第1章 内容介绍.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "93fe1ee7aa2b641f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "15269d64b7a08413",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "c6df68ff8e598336",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "linux基础/第1章 内容介绍.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "1ae7d81043cbfbd4",
+  "lastOpenFiles": [
+    "linux基础/第3章 linux环境.md",
+    "linux基础/第2章 linux认识.md",
+    "linux基础/第1章 内容介绍.md",
+    "linux基础/第14章 进程管理.md",
+    "第9章 常用命令.pdf",
+    "第8章 用户管理.pdf",
+    "linux基础/第9章 常用命令.md",
+    "linux基础/第8章 用户管理.md",
+    "linux基础/w第26章 linux面试题.md",
+    "linux基础/w第25章 Linux可视化管理webmin和bt运维工具.md",
+    "linux基础/w第23章 Linux系统的备份和恢复.md",
+    "linux基础/w第22章 定制自己的Linux.md",
+    "linux基础/w第21章 日志管理.md",
+    "linux基础/w第20章 centos8.1的使用.md",
+    "linux基础/w第19章 APT软件管理和远程登录.md",
+    "linux基础/w第18章 py开发平台ubuntu.md",
+    "linux基础/第17章 shell编程.md",
+    "linux基础/0.resources/Pasted image 20260814195102.png",
+    "linux基础/0.resources/Pasted image 20260814194916.png",
+    "linux基础/0.resources/Pasted image 20260814193941.png",
+    "linux基础/0.resources/Pasted image 20260814193929.png",
+    "linux基础/0.resources/Pasted image 20260814192817.png",
+    "linux基础/0.resources/Pasted image 20260814192634.png",
+    "linux基础/0.resources/Pasted image 20260814192552.png",
+    "linux基础/0.resources/Pasted image 20260814192533.png",
+    "linux基础/0.resources/Pasted image 20260814192450.png",
+    "linux基础/0.resources/Pasted image 20260814192402.png",
+    "linux基础/第10章 组管理和权限管理.md",
+    "linux基础/w第16章 linux上搭建javaEE环境.md",
+    "linux基础/第15章 RPM和DNF.md",
+    "linux基础/w第11章 定时任务调度.md",
+    "linux基础/w第13章 网络配置.md",
+    "linux基础/第12章 Linux磁盘分区,挂载.md",
+    "linux基础/第7章 Linux开机,重启,用户登录注销.md",
+    "linux基础/第6章 vi和vim.md",
+    "linux基础/第5章 远程登录.md",
+    "linux基础/第4章 linux目录结构.md",
+    "linux基础/第三章 基础",
+    "linux基础/第二章 linux入门",
+    "linux基础/0.resources",
+    "linux基础/第一章 内容介绍",
+    "linux基础"
+  ]
+}
